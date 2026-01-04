@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <img src="../img/logo.png" alt="">
+        <input class="Search" type="text" class="form-control " placeholder="Search">
+        <div class="searchbar">
+            <a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#A1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="A1">
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="../shop.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+
+
+
+            <div class="a1 ml-3 d-flex">
+
+                <a href="#" class="text-white mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                    </svg>
+                </a>
+
+                <a href="#" class="text-white mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </a>
+
+                <a href="../cart.html" class="text-white mx-2 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                    <span class="cart-badge badge badge-danger rounded-circle position-absolute"
+                        style="top: -5px; right: -5px; font-size: 12px;">0</span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <section class="container-fluid">
+        <div class="pro mb-4">
+            <a href="../shop.html#mens" class="back-link text-secondary">
+                <i class="bi bi-arrow-left mr-2"></i>Back to Shop
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 mb-4">
+                <img class="proimg " src="../img/kidsdress/gcd-1.webp" alt="Formal Shirt">
+                <div class="row mt-3 justify-content-center justify-content-md-start">
+                    <div class="col-auto"><a href="#"><img class=" img-thumbnail" style="width: 60px;"
+                                src="../img/kidsdress/gcd-2.png" alt=""></a></div>
+                    <div class="col-auto"><a href="#"><img class=" img-thumbnail" style="width: 60px;"
+                                src="../img/kidsdress/gcd-3.png" alt=""></a></div>
+                    <div class="col-auto"><a href="#"><img class=" img-thumbnail" style="width: 60px;"
+                                src="../img/kidsdress/gcd-4.png" alt=""></a></div>
+                    <div class="col-auto"><a href="#"><img class=" img-thumbnail" style="width: 60px;"
+                                src="../img/kidsdress/gcd-5.png" alt=""></a></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 mb-4">
+                <h2 class="font-weight-bold">Multicolor Floral Printed Knee Length Fit and Flared Casual Dress</h2>
+
+                <div class="mb-3 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-muted small ml-2 text-dark">(4.5/5 based on 120 reviews)</span>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="d-inline text-primary font-weight-bold">$599</h3>
+                    <del class="text-muted ml-2">$999</del>
+                    <span class="badge badge-success ml-2">Save 40%</span>
+                </div>
+
+                <p class="text-secondary lead" style="font-size: 1rem;">
+                    Elevate your daily wardrobe with this sophisticated brown formal shirt. Crafted from soft,
+                    breathable fabric with a matte finish, it features a tailored slim fit that ensures a sharp look for
+                    office wear or evening events.
+                </p>
+
+                <div class="bg-light p-3 rounded mb-4">
+                    <h6 class="font-weight-bold">Product Highlights:</h6>
+                    <ul class="mb-0 small text-muted pl-3">
+                        <li><strong>Material:</strong> 100% Premium Cotton</li>
+                        <li><strong>Fit:</strong> Modern Slim Fit</li>
+                        <li><strong>Wash Care:</strong> Machine wash cold</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h6 class="font-weight-bold mb-2">Select Size:</h6>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-dark shadow-sm" style="min-width: 50px;">
+                            <input type="radio" name="size" id="s" autocomplete="off"> S
+                        </label>
+                        <label class="btn btn-outline-dark shadow-sm active" style="min-width: 50px;">
+                            <input type="radio" name="size" id="m" autocomplete="off" checked> M
+                        </label>
+                        <label class="btn btn-outline-dark shadow-sm" style="min-width: 50px;">
+                            <input type="radio" name="size" id="l" autocomplete="off"> L
+                        </label>
+                        <label class="btn btn-outline-dark shadow-sm" style="min-width: 50px;">
+                            <input type="radio" name="size" id="xl" autocomplete="off"> XL
+                        </label>
+                        <label class="btn btn-outline-dark shadow-sm" style="min-width: 50px;">
+                            <input type="radio" name="size" id="xxl" autocomplete="off"> XXL
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <label class="text-muted font-weight-bold">Quantity:</label>
+                    <input type="number" class="form-control w-25" value="1" min="1">
+                </div>
+
+                <div class="">
+                    <button class="buy">
+                        Buy Now
+                    </button>
+                    <button class="A2cart">
+                        <i class="bi bi-cart-plus mr-2"></i>Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="container-fluid">
+        <div class="row mt-5 pt-4">
+            <div class="col-12 mb-4 d-flex justify-content-between align-items-center border-bottom pb-2">
+                <h3 class="font-weight-bold mb-0">You Might Also Like</h3>
+
+                <a href="../shop.html" class="btn btn-outline-primary btn-sm rounded-pill px-3">View All</a>
+            </div>
+        </div>
+         <section class="container-fluid">
+
+            <div class=" row ">
+                <div class="col-12 col-md-6 col-lg-3 ">
+
+
+                    <div class="card mx-auto">
+                        <a href="../prodectpage/p17.html"><img class="card-img-top" src="../img/kidsdress/gad-1.webp"
+                                alt="Product"></a>
+                        <div class="card-body">
+                            <a class="shar" href=""><i class="bi bi-share-fill"></i></a>
+                            <h5 class="card-title">Girl's Party Wear Dress</h5>
+                            <p>
+                                $599
+                                <del class="text-decoration-line-through text-muted">$999</del>
+                            </p>
+                            <a class="cartbtn" href="../prodectpage/p17.html" class="btn btn-primary"></i>See Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ">
+
+
+                    <div class="card mx-auto">
+                        <a href="../prodectpage/p18.html"><img class="card-img-top" src="../img/kidsdress/gbd-1.webp"
+                                alt="Product"></a>
+                        <div class="card-body">
+                            <a class="shar" href=""><i class="bi bi-share-fill"></i></a>
+                            <h5 class="card-title">BETTY Girls Maxi Dress</h5>
+                            <p>
+                                $599
+                                <del class="text-decoration-line-through text-muted">$999</del>
+                            </p>
+                            <a class="cartbtn" href="../prodectpage/p18.html" class="btn btn-primary"></i>See Now</a>
+                        </div>
+                    </div>
+                </div>
+                   <div class="col-12 col-md-6 col-lg-3 ">
+
+
+                <div class="card mx-auto">
+                    <a href="../prodectpage/p23.html"><img class="card-img-top" src="../img/kidsdress/bd-1.webp"
+                            alt="Product"></a>
+                    <div class="card-body">
+                        <a class="shar" href=""><i class="bi bi-share-fill"></i></a>
+                        <h5 class="card-title">Boy's Half Sleeve T-shirt and Denim Shorts Clothing Set</h5>
+                        <p>
+                            $599
+                            <del class="text-decoration-line-through text-muted">$999</del>
+                        </p>
+                        <a class="cartbtn" href="../prodectpage/p23.html" class="btn btn-primary"> </i>See Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 ">
+
+
+                <div class="card mx-auto">
+                    <a href="../prodectpage/p24.html"><img class="card-img-top" src="../img/kidsdress/cd-1.png"
+                            alt="Product"></a>
+                    <div class="card-body">
+                        <a class="shar" href=""><i class="bi bi-share-fill"></i></a>
+                        <h5 class="card-title">Boys' Casual Wear Pant and Shirt Set</h5>
+                        <p>
+                            $599
+                            <del class="text-decoration-line-through text-muted">$999</del>
+                        </p>
+                        <a class="cartbtn" href="../prodectpage/p24.html" class=""></i>See Now</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </div>
+    <script src="../pcart.js"></script>
+
+</body>
+
+</html>

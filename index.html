@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <img src="img/logo.png" alt="">
+        <input id="navSearchInput" class="Search" type="text" placeholder="Search">
+        <div class="searchbar">
+            <a href="javascript:void(0)" id="navSearchBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#A1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="A1">
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shop.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+
+
+            <div class="a1 ml-3 d-flex">
+
+                <a href="#" class="text-white mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                    </svg>
+                </a>
+
+                <a href="#" class="text-white mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </a>
+
+                <a href="cart.html" class="text-white mx-2 position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                    <span class="cart-badge badge badge-danger rounded-circle position-absolute"
+                        style="top: -5px; right: -5px; font-size: 12px;">0</span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <section class="homebaner  ">
+        <div class="row ">
+            <div class="btext col-lg-12 col-md-7 col-sm-12 ">
+                <h1 class="hero-title">Welcome To My Brand </h1>
+
+                <a href="shop.html" type="button">Shop now</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="dimg">
+        <a href=""><img src="img/img.avif" alt=""></a>
+    </div>
+    <h2 class="h1">Deal of The Day</h2>
+    <section class="section-p1">
+        <div class="row">
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p5.html"><img src="img/men/cs-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Casual Textured Button Down Shirt</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p1.html"><img src="img/men/fs-1.png" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Men’s Slim-Fit Long-Sleeve Dress Formal Shirt</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p8.html"><img src="img/men/s-1.png" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">glitchez Men Slim Fit Light Fade Stretchable Jeans</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p6.html"><img src="img/men/jp-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">glitchez Men Slim Fit Light Fade Stretchable Jeans Pants</h5>
+                    </div>
+                </div>
+
+    </section>
+    <section class="section-p1">
+        <div class="row">
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p10.html"><img src="img/women/bd-1.webp " alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Women's Traditional South Indian SemiStitched Half and Half Saree</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p11.html"><img src="img/women/cd-1.png " alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Georgette Fit & Flare Maxi Women's Dress</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p18.html"><img src="img/kidsdress/gbd-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">BETTY Girls Maxi Dress</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+
+                <div class="ab">
+                    <a href="prodectpage/p21.html"><img src="img/kidsdress/ad-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Kids T Shirt & Jeans Set</h5>
+                    </div>
+                </div>
+
+    </section>
+
+
+    <h2 class="h1 text-center mt-5">NEW ARRIVAL</h2>
+    <section class="section-p1">
+        <div class="row">
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p19.html"><img src="img/kidsdress/gcd-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Multicolor Floral Printed Knee Length Fit and Flared Casual Dress</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p16.html"><img src="img/women/hd-1.webp" alt=""></a>
+
+                    <div class="ab-text">
+                        <h5 class="card-title">Royal Ethnic Motifs Embroidered Fit & Flare Maxi Ethnic Dress</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p3.html"><img src="img/men/suit-1.png" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Charcoal Grey Double-Breasted Slim-Fit Suit.</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p14.html"><img src="img/women/fd-1.webp" alt=""></a>
+                    <div class="ab-text">
+                      <h5 class="card-title">Sangria Indigo Cotton Dress</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="row">
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p20.html"><img src="img/kidsdress/gdd-1.webp" alt=""></a>
+                    <div class="ab-text">
+                       <h5 class="card-title">White Button Girl's Blue Foil A-Line Maxi Dresst</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p15.html"><img src="img/women/gd-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title"> Women's Printed Sleeveless A-Line Maxi Dress</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p24.html"><img src="img/kidsdress/cd-1.png" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Boys' Casual Wear Pant and Shirt Set</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="b1 col-md-4 col-lg-3 col-sm-6">
+                <div class="ab">
+                    <a href="prodectpage/p5.html"><img src="img/men/cs-1.webp" alt=""></a>
+                    <div class="ab-text">
+                        <h5 class="card-title">Casual Textured Button Down Shirt</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="noResults" class="container text-center my-5" style="display: none;">
+        <i class="bi bi-search" style="font-size: 4rem; color: #dee2e6;"></i>
+        <h3 class="mt-3">No products found matching your search.</h3>
+        <p class="text-muted">Try different keywords or check your spelling.</p>
+        <button onclick="clearSearch()" class="btn btn-outline-primary mt-2">View All Products</button>
+    </div>
+
+
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <!---Help & Contact--->
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Help & Contact</h6>
+                    <ul class="list-unstyled footer-links">
+
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Shipping Rates</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Assistant</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact us</a></li>
+
+                    </ul>
+                </div>
+
+                <!---product categories--->
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Product categories</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Electronic</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                        <li><a href="#">Men's Fashion</a></li>
+                        <li><a href="#">Girl's Fashion</a></li>
+                        <li><a href="#">Boy's Fashion</a></li>
+                        <li><a href="#">Health & Household</a></li>
+                        <li><a href="#">Home & Kitchen</a></li>
+                        <li><a href="#">Pet Supplies</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Payment Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Payment Info</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Business Card</a></li>
+                        <li><a href="#">Shop with Points</a></li>
+                        <li><a href="#">Reload Your Balance</a></li>
+                        <li><a href="#">Paypal</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">About Us</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Company info</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Customer reviews</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <footer class="foot bg-dark text-white py-4 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h4>About Us</h4>
+                    <p>Information about the store goes here.</p>
+                </div>
+                <div class="col-6 text-right">
+                    <h4>Contact Us</h4>
+                    <p>Email: mybrand05@email.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
