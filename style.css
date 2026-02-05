@@ -24,16 +24,15 @@
  }
 
  .Search {
-     width: 240px;
-     padding: 8px 18px;
-     border-radius: 30px;
+     padding:  10px;
+     border-radius:  10px 1px 1px 10px;
      border: none;
      outline: none;
  }
  .searchbar{
     background-color: #555;
-    border-radius: 10px  20px 20px 10px;
-    padding: 10px;
+    border-radius: 1px  10px 10px 1px;
+    padding: 5px;
  }
 
  .searchbar:hover{
@@ -106,6 +105,13 @@
          margin-top: 0px;
          height: 300px;
      }
+     .searchbar{
+
+    margin-right: 100px;
+     }
+      .Search {
+    width: 150px;
+      }
   
 
 
@@ -239,18 +245,21 @@
  .ab img {
      width: 100%;
      height: 280px;
-     object-fit: cover;
-     transition: .4s;
+     background: #333132;
+     padding: 20px;
+     border-radius: 30px;
  }
 
  .ab:hover img {
-     transform: scale(1.12) rotate(-1deg);
+     transform: scale(1.12) ;
+     border-radius: 40px;
  }
 
  .ab-text {
-     padding: 15px;
+     padding: 20px;
      text-align: center;
  }
+
 
 .card-body{
     transform: none;
@@ -277,6 +286,11 @@
     .navbar img {
         height: 70px;
         width: 80px;
+    }
+    .ab{
+        width: 350px;
+        margin-left: 50px;
+        margin-top: 10px;
     }
     .dimg{
         height: 40px;
@@ -446,6 +460,7 @@
      font-size: 15px;
      font-weight: 600;
      min-height: 44px;
+     color: white;
  }
 
  .card p {
