@@ -252,10 +252,19 @@
      border-radius: 40px;
  }
 
- .ab-text {
-     padding: 20px;
-     text-align: center;
- }
+ .ab-text h5 {
+    font-size: 16px;
+    line-height: 1.4;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    height: 45px;   /* Important: fix height */
+}
 
 
 .card-body{
@@ -395,26 +404,42 @@
  .card:hover .card-img-top {
      transform: scale(1.15) rotateX(6deg);
  }
+/* ================= SHARE ICON ================= */
+.card {
+    position: relative;
+}
 
- /* ================= SHARE ICON ================= */
- .shar {
-     position: absolute;
-     top: 16px;
-     right: 16px;
-     width: 40px;
-     height: 40px;
-     background: #000;
-     color: #fff;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     opacity: 0;
-     transform: scale(.4);
-     transition: .4s;
-     z-index: 3;
- }
+.shar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: scale(.4);
+    transition: .4s;
+    z-index: 3;
+}
+
+.card:hover .shar {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+    .shar {
+       transform: none;
+    }
+}
  .card:hover .shar {
      opacity: 1;
      transform: scale(1);
@@ -612,8 +637,13 @@
    
      .carousel-item img{
         width: 100%;
-        height: 300px;
+        height: 200px;
      }
+     .shar {
+        opacity: 1;
+        transform: scale(1);
+        animation: none;   /* optional – remove pulse on mobile */
+    }
 
      .content h2 {
          font-size: 32px;
