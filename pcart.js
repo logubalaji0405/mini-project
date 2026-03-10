@@ -52,3 +52,9 @@
         
         // Run on page load
         updateCartCount();
+
+
+
+
+        // checkout 
+        

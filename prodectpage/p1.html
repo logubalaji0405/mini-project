@@ -164,8 +164,9 @@
 
                 <div class="">
 
-                    <button href="../checkout.html" class="buy">
-                        Buy Now
+                    <button class="buy" onclick="buyNow()"><a href="../checkout.html">
+                            Buy Now
+                        </a>
                     </button>
                     <button class="A2cart">
                         <i class="bi bi-cart-plus mr-2"></i>Add to Cart
@@ -257,6 +258,21 @@
         </section>
     </div>
     <script src="../pcart.js"></script>
+    <script>
+        function buyNow() {
+
+            const product = {
+                name: "Men’s Slim-Fit Long-Sleeve Dress Formal Shirt",
+                price: 599,
+                image: "../img/men/fs-1.png"
+            };
+
+            localStorage.setItem("checkoutProduct", JSON.stringify(product));
+
+            window.location.href = "../checkout.html";
+
+        }
+    </script>
 
 </body>
 
